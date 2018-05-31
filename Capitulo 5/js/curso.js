@@ -26,4 +26,41 @@ document.getElementById("boton").addEventListener("click", function (e) {
                 "\nNodo de texto del objetivo: " + e.target.textContent);
 });
 
+// Mostrar por consola el caracter asociado a la tecla pulsada.
+document.addEventListener("keypress", function(e){
+    console.log(e.key); // muestra por pantalla la tecla pulsada
+});
 
+// Utilizar la misma función para gestionar los dos eventos
+function infoTecla(e){
+    console.log("Evento: " + e.type + // muestra por pantalla el tipo de evento)
+    "\n Tecla: " + e.key) // muestra por pantalla la tecla pulsada;
+};
+
+document.addEventListener("keydown", infoTecla);
+document.addEventListener("keyup", infoTecla);
+
+// Retorna el nombre del botón del ratón a partir de su codigo
+function getBotonRaton(codigo){
+    var boton = "desconocido";
+    switch (codigo){
+        case 0: // es el código del botón izquierdo
+            boton = "izquierdo";
+            break;
+        case 1: // es el código del botón central (si lo tiene)
+            boton = "central";
+            break;
+        case 2: // es el código del botón derecho
+            boton = "derecho";
+            brek;        
+    }
+    return boton;
+}
+
+// Muestra la información de un evento del ratón
+function infoRaton(e){
+    console.log("Evento de ratón: " + e.type + ", botón " + getBotonRaton(e.button) + ", X: " + e.clientX + ", Y: " + e.clientY);
+}
+
+// Gestor de click del ratón
+document.addEventListener("click", infoRaton);
