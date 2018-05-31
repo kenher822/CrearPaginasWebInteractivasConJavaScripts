@@ -52,7 +52,7 @@ function getBotonRaton(codigo){
             break;
         case 2: // es el código del botón derecho
             boton = "derecho";
-            brek;        
+            break;        
     }
     return boton;
 }
@@ -62,5 +62,32 @@ function infoRaton(e){
     console.log("Evento de ratón: " + e.type + ", botón " + getBotonRaton(e.button) + ", X: " + e.clientX + ", Y: " + e.clientY);
 }
 
+// -----------------------------------------------
+
 // Gestor de click del ratón
 document.addEventListener("click", infoRaton);
+
+// Gestor de pulsasión de un botón del ratón
+document.addEventListener("mousedown", infoRaton);
+document.addEventListener("mouseup", infoRaton);
+
+
+// Gestor de la carga total de la página web
+window.addEventListener("load", function(){
+    console.log("Página totalmente cargada");
+});
+
+// Gestor del clic sobre el documento
+document.addEventListener("click", function(){
+    console.log("Gestor del documento");
+});
+
+// Gestor del click sobre el párrafo
+document.getElementById("parrafo").addEventListener("click", function(){
+    console.log("Gestor del párrafo");
+});
+
+// Gestor del click sobre el botón
+document.getElementById("propagacion").addEventListener("click", function(){
+    console.log("Gestor del botón");
+})
