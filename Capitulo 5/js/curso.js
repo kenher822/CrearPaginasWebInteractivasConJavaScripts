@@ -88,6 +88,7 @@ document.getElementById("parrafo").addEventListener("click", function(){
 });
 
 // Gestor del click sobre el botón
-document.getElementById("propagacion").addEventListener("click", function(){
+document.getElementById("propagacion").addEventListener("click", function(e){
     console.log("Gestor del botón");
-})
+    e.stopPropagation();
+});
