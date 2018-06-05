@@ -32,7 +32,7 @@ La adición de un nuevo elemento a una página web puede descomponerse en tres o
 Por ejemplo, si queremos añadir el lenguaje "Java" a la lista, lo haremos de la siguiente forma.
 */
 
-var javaElt = document.createElement("li").INSERT; // Creación de un elemento li
+var javaElt = document.createElement("li"); // Creación de un elemento li
 javaElt.id = "java";
 javaElt.textContent = "Java";
 document.getElementById("lenguajes").appendChild(javaElt); // Inserción del nuevo elemento

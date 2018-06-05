@@ -15,4 +15,4 @@ console.log(parrafosElts[2].style.color); // No muestra nada
 
 var styleP3 = getComputedStyle(document.getElementById("p3"));
 console.log(styleP3.fontStyle); // Muestra "italic" (cursiva)
-console.log(styleP3.listStyle = "none"); // Muestra el color azul en valores RGB
+console.log(styleP3.listStyle.color = "none"); // Muestra el color azul en valores RGB

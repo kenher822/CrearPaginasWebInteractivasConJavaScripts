@@ -9,7 +9,7 @@ body{
 }
 
 button{
-    border-bottom: rgb(255, 8, 0);
+    border: 1px ridge black;
     box-shadow: 0 1px 5px 5px rgb(0, 140, 255);
     border: black;    
     font-size: .8em;
