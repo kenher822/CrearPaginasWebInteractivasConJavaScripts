@@ -92,3 +92,10 @@ document.getElementById("propagacion").addEventListener("click", function(e){
     console.log("Gestor del botón");
     e.stopPropagation();
 });
+
+// Modificar el comportamiento por defecto en caso de evento
+// Gestor del evento click sobre el enlace "eloquent-js"
+document.getElementById("eloquent-js").addEventListener("click", function(e){
+    console.log("Te recomiendo este libro cuando termines el curso. Pero de momento continúa aquí...");
+    e.preventDefault(); // Eliminación de la navegación hacia la url del enlace
+});
