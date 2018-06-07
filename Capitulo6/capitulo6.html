@@ -1,58 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jugando con los formularios</title>
 </head>
-<body>
-    <form action="">
-        <p>
-            <label for="nombre">Nombre de Usuario</label>
-            <input type="text" name="nombre" id="nombre" required>
-            <span id="ayudaNombre"></span>
-        </p>
-        <p>
-            <label for="clave">Contraseña</label>
-            <input type="password" name="clave" id="clave" required>
-            <span id="ayudaClave"></span>
-        </p>
-        <p>
-            <label for="email">Dirección email</label>
-            <input type="email" name="email" id="email" required placeholder="user@gmail.com">
-            <span id="ayudaEmail"></span>
-        </p> 
-        <p>            
-            <input type="checkbox" name="confirmacion" id="confirmacion">
-            <label for="confirmacion">Envíame un email de confirmación</label>            
-        </p>
-        <p>
-            <input type="radio" name="suspcripcion" id="newsPromo" value="newsPromo">
-            <label for="newsPromo">Suscribirse a la newslesster y a las promociones</label>
-            <br>
-            <input type="radio" name="suspcripcion" id="news" value="news">
-            <label for="news">Suscribirme sólo a la newslesster</label>
-            <br>
-            <input type="radio" name="suspcripcion" id="noNewsPromo" value="noNewsPromo" checked>
-            <Label for="noNewsPromo">No deseo Suscribirme</Label>
-            <br>
-        </p>
-        <p>
-            <label for="nacionalidad">Nacionalidad</label>
-            <select name="nacionalidad" id="nacionalidad">
-                <option value="ES" selected>Español</option>
-                <option value="ME">Mexicano</option>
-                <option value="AR">Argentino</option>
-                <option value="NI">Nicaraguense</option>
-                <option value="Otrs">Otra</option>
-            </select>
-        </p>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Cancel">
-    </form>
+<body>
+    <div>
+        <form action="">
+            <div>
+                <h1>Fromulario de inscripción</h1>
+            </div>
+            <div>
+                <p>
+                    <label for="nombre">Nombre de Usuario</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <span id="ayudaNombre"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="clave">Contraseña</label>
+                    <input type="password" name="clave" id="clave" required>
+                    <span id="ayudaClave"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="email">Dirección email</label>
+                    <input type="email" name="email" id="email" required placeholder="user@gmail.com">
+                    <span id="ayudaEmail"></span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="checkbox" name="confirmacion" id="confirmacion">
+                    <label for="confirmacion">Envíame un email de confirmación</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="radio" name="suspcripcion" id="newsPromo" value="newsPromo">
+                    <label for="newsPromo">Suscribirse a la newslesster y a las promociones</label>
+                    <br>
+                    <input type="radio" name="suspcripcion" id="news" value="news">
+                    <label for="news">Suscribirme sólo a la newslesster</label>
+                    <br>
+                    <input type="radio" name="suspcripcion" id="noNewsPromo" value="noNewsPromo" checked>
+                    <Label for="noNewsPromo">No deseo Suscribirme</Label>
+                    <br>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="nacionalidad">Nacionalidad</label>
+                    <select name="nacionalidad" id="nacionalidad">
+                        <option value="ES" selected>Español</option>
+                        <option value="ME">Mexicano</option>
+                        <option value="AR">Argentino</option>
+                        <option value="NI">Nicaraguense</option>
+                        <option value="Otrs">Otra</option>
+                    </select>
+                </p>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            <div>
+                <input type="reset" value="Cancel">
+            </div>
+
+
+
+        </form>
+    </div>
 
     <script src="js/curso.js"></script>
 </body>
+
 </html>
