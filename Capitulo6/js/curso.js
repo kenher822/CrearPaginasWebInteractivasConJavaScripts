@@ -5,19 +5,32 @@ nombreELt.addEventListener("focus", function () {
     document.getElementById("ayudaNombre").textContent = "Intruduzca un nombre de usuario";
 });
 
+// Borra el mensaje de texto de ayuda para el campo nombre-usuario
+nombreELt.addEventListener("blur", function () {
+    document.getElementById("ayudaNombre").textContent = "";
+});
+
 var claveElt = document.getElementById("clave");
 // Muestra un mensaje de texto para ayuda al usuario al ingresa una contraseña
 claveElt.addEventListener("focus", function(){
     document.getElementById("ayudaClave").textContent = "Introduzca una contraseña";
 });
 
+// Borra el mensaje de texto de ayuda para el campo clave-usuario
 claveElt.addEventListener("blur", function(){
     document.getElementById("ayudaClave").textContent = "";
 });
 
-// Borra el mensaje de texto de ayuda para el campo nombre-usuario
-nombreELt.addEventListener("blur", function () {
-    document.getElementById("ayudaNombre").textContent = "";
+var emailElt = document.getElementById("email");
+
+// Muestra mensaje de texto para ayuda al usuario al ingresar un email
+emailElt.addEventListener("focus", function(){
+    document.getElementById("ayudaEmail").textContent = "Introduzca un correo electrónico válido";
+});
+
+// Borra mensaje de texto de ayuda 
+emailElt.addEventListener("blur", function(){
+    document.getElementById("ayudaEmail").textContent = "";
 });
 
 // Muestra si el usuario hace click en la casilla confirmación
