@@ -51,4 +51,9 @@ document.getElementById("nacionalidad").addEventListener("change",function(e){
 });
 
 
+var form = document.querySelector("form");
+console.log("Número de campos: " + form.elements.length); // Muestra 10
+console.log(form.elements[0].name); // Muestra "nombre"
+console.log(form.elements.clave.type); // Muestra "password"
+
 
