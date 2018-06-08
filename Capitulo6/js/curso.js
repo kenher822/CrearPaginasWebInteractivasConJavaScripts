@@ -56,4 +56,13 @@ console.log("Número de campos: " + form.elements.length); // Muestra 10
 console.log(form.elements[0].name); // Muestra "nombre"
 console.log(form.elements.clave.type); // Muestra "password"
 
-
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    // También se puede acceder a los elementos a través de form.elements Ejemplo -> form.elements.nombre.value
+    console.log("Nombre de usuario: " + event.target.elements.nombre.value);
+    console.log("Contraseña: " + event.target.clave.value);
+    console.log("Email: " + event.target.email.value);
+    console.log("Confirmación: " + event.target.confirmacion.value);
+    console.log("Suscripción: " + event.target.suscripcion.value);
+    console.log("Nacionalidad: " + event.target.nacionalidad.value);
+});
