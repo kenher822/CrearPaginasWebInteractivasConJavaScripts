@@ -5,7 +5,15 @@ nombreELt.addEventListener("focus", function () {
     document.getElementById("ayudaNombre").textContent = "Intruduzca un nombre de usuario";
 });
 
+var claveElt = document.getElementById("clave");
+// Muestra un mensaje de texto para ayuda al usuario al ingresa una contraseña
+claveElt.addEventListener("focus", function(){
+    document.getElementById("ayudaClave").textContent = "Introduzca una contraseña";
+});
 
+claveElt.addEventListener("blur", function(){
+    document.getElementById("ayudaClave").textContent = "";
+});
 
 // Borra el mensaje de texto de ayuda para el campo nombre-usuario
 nombreELt.addEventListener("blur", function () {
